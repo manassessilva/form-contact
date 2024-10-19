@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!--Estilização CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonte que será utilizada-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="content">
+        <header class="content-header">
+            <h1 class="content-header-title">Interested in our business pricing?</h1>
+            <h2 class="content-header-caption">Fill out the form to view details and we’ll contact you as soon as possible.</h2>
+        </header>
+        <section class="content-boby">
+            <form class="content-body-form" action="#" name="contact" method="post">
+                <div class="content-body-form-personal">
+                    <label class="content-body-form-personal-title" for="name">
+                        Nome
+                        <input class="content-body-form-personal-input" type="text" name="name" id="name" placeholder="Ethan Johnson" required>
+                    </label>
+    
+                    <label class="content-body-form-personal-title" for="email">
+                        Company Email
+                        <input class="content-body-form-personal-input" type="email" name="email" id="email" placeholder="ethan@johnson.com" required>
+                    </label>
+                </div>
+                
+                <div class="content-body-form-options">
+                    <label class="content-body-form-options-title" for="menbers">
+                        Company Size
+                        <select class="content-body-form-options-select" name="menbers" id="menbers" required>
+                            <option value="50-100 employees" selected>50-100 employees</option>
+                            <option value="100-150 employees">100-150 employees</option>
+                            <option value="150-200 employees">150-200 employees</option>
+                        </select>
+                    </label> 
+                    
+
+                    <label class="content-body-form-options-title" for="subject">
+                        Subject
+                        <select class="content-body-form-options-select" name="subject" id="subject" required>
+                            <option value="Landing pages" selected>Building Landing pages</option>
+                            <option value="home page">Building home page</option>
+                            <option value="personalized form">Personalized form</option>
+                        </select>
+                    </label>
+                     
+                </div>
+
+                <label class="content-body-form-message" for="message">
+                    Message
+                    <textarea class="content-body-form-message-input" name="message" id="message" rows="10" cols="50" maxlength="50" placeholder="50-100 employees"></textarea>
+                </label>
+
+                <button class="content-body-form-button" type="submit">Contact Sales</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,185 @@
+:root {
+    --button-color: #4036A9;
+    --text-color: #F8FAFC;
+    --input-color: #FFFFFF;
+    --input-text-color: #111729;
+    --input-placeholder-color: #CDD5E0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(60,68,184);
+    background: linear-gradient(322deg, rgba(60,68,184,1) 0%, rgba(79,33,155,1) 36%, rgba(114,41,194,1) 70%, rgba(183,69,113,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    width: 45%;
+    margin: 5% auto;
+}
+
+.content-header {
+    margin-bottom: 64px;
+}
+
+.content-header-title {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.content-header-caption {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-body-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 16px;
+
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content-body-form-personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+
+    .content-body-form-personal-title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+        width: 100%;
+    
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: var(--text-color); 
+    
+        .content-body-form-personal-input {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: var(--input-text-color); 
+        
+            padding: 16px;
+            border-radius: 8px;
+            border-style: none;
+            outline: none;
+            width: 90%;
+        }
+    
+        .content-body-form-personal-input::placeholder {
+            color: var(--input-placeholder-color);
+        }
+    }
+}
+
+.content-body-form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    .content-body-form-options-title {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+        width: 100%;
+
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: var(--text-color);
+
+        .content-body-form-options-select {
+            font-family: "Be Vietnam Pro", sans-serif;
+            font-weight: 400;
+            font-size: 0.875rem;
+            color: var(--input-text-color);
+
+            padding: 16px;
+            border-radius: 8px;
+            border-style: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+}
+
+.content-body-form-message {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--text-color);
+
+    .content-body-form-message-input {
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: var(--input-text-color);
+
+        padding: 16px;
+        border-radius: 8px;
+        border-style: none;
+        outline: none;
+    }
+}
+
+.content-body-form-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--button-color);
+}
+
+@media (max-width: 1024px)  {
+
+    .content {
+        width: 70%;
+        margin: 5% auto;
+    }
+}
+
+@media (max-width: 640px)  {
+
+    .content {
+        width: 98%;
+        margin: 5% auto;
+    }
+}
